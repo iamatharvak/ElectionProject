@@ -18,9 +18,7 @@ const ElectionResults = () => {
     (result) =>
       result.constituency.toLowerCase().includes(searchQuery.toLowerCase()) ||
       result.leading_party.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      result.leading_candidate
-        .toLowerCase()
-        .includes(searchQuery.toLowerCase()) ||
+      result.leading_candidate.toLowerCase().includes(searchQuery.toLowerCase()) ||
       result.state.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
